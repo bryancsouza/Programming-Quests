@@ -20,6 +20,7 @@ The folder {download}`./A Study with Strings.zip` has multiple text files with t
 - Chapter 7: all the alphanumeric characters were shifted by a certain amount. The first character shifted, was shifted by 1, the second character shifted was shifted by 2, and so on, incrementing 1 to the shifted amount at every new shifted character. Spaces or other non alphanummeric characters do not add to the shift. 
 
 :::{tip}
+:class: dropdown
 Note that a shift $s$ that can always be written in the form: 
 $$s = 26*k + i$$
 with integers $k$ and $i$. And that different k values for a given n results in the same operation. For example, a shift of 2 ($k=0, n=2$) is equal to a shift of 28 ($k=1, n=2$).
@@ -51,8 +52,8 @@ Similar to the previous exercise, implement a script that can undo the transform
 
 
 :::{tip}
-:dropdown:
-The last two chapters are a bit harder to solve. And some of these problems would require a tool called [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis) to solve in an automatic way. Feel free to have a look at it if you are interested in Cryptography. However, it's also possible to break the code by deduction and some trial and error (look for common words in English that contain only 2 or 3 letters!). 
+:class: dropdown
+The last two problems (13 and 14) are a bit harder to solve. And some of these problems would require a tool called [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis) to solve in an automatic way. Feel free to have a look at it if you are interested in Cryptography. However, it's also possible to break the code by deduction and some trial and error (look for common words in English that contain only 2 or 3 letters!). 
 :::
 
 
