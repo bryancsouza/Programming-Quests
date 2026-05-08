@@ -7,7 +7,10 @@ project:
   # description:
   # keywords: []
   
-  jupyter: true
+  #jupyter: true
+  jupyter:
+    binder: 
+      repo: https://github.com/executablebooks/thebe-binder-base 
   authors: 
     - name: Bryan C. Souza
 
