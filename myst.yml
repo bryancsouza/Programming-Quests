@@ -58,7 +58,9 @@ site:
     extra_navbar: "" # Will be displayed underneath the left navbar. This setting overrides the default 'powered by Jupyter Book'
     comments:
       hypothesis: true # Hypothesis for comments
-
+  actions:
+      - title: PDF
+        url: ./exports/book.pdf
   thumbnail: null
 
 
