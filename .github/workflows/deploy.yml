@@ -28,7 +28,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    steps:
+    steps:          
       - uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -37,6 +37,18 @@ jobs:
           node-version: 18.x
       - name: Install Jupyter Book (via myst)
         run: npm install -g jupyter-book
+
+      - uses: typst-community/setup-typst@v4
+      - name: Build PDF
+        run: |
+          jupyter book build --pdf
+      - name: Upload Output PDF as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Output PDF
+          path: exports/book.pdf
+          compression-level: 0
+
       - name: Build HTML Assets
         run: jupyter-book build --execute --html 
       - name: Upload artifact
