@@ -9,7 +9,7 @@ project:
   #   - plugins/pyodide-editable/pyodide-editable.mjs
   exports:
       - format: typst
-        template: lapreprint-typst
+        template: https://github.com/myst-templates/plain_typst_book.git
         output: exports/book.pdf
         id: output-pdf
 
