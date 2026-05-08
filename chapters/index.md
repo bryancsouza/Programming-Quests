@@ -3,7 +3,7 @@
 # thumbnail: ./thumbnails/nice-image.png
 ---
 
-# Programming questboard
+# Programming quests
 *Exercises for becoming an awesome programmer*
 
 This is a living document with a collection of programming exercises, sometimes also referred as quests. The goal of these quests is to provide interesting opportunities for novice programmers to practice their skills, while learning other topics and (hopefully) having fun at the same time. The exercises are designed in Python, but feel free to try to solve them with other programming language.

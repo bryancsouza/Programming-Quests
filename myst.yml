@@ -3,15 +3,15 @@ version: 1
 
 project:
   id: b3daadf3-12be-4ed8-a44b-70fc4a39ab9b
-  title: Welcome to the Questboard
-  # description:
-  # keywords: []
-    
-  exports:
-      - format: pdf
-        template: arxiv_two_column
-        article: intro.md
-        output: exports/intro.pdf
+  title: Programming Questboard
+  
+  plugins:
+    - plugins/pyodide-editable/pyodide-editable.mjs
+  # exports:
+  #     - format: pdf
+  #       template: arxiv_two_column
+  #       article: chapters/intro.md
+  #       output: exports/intro.pdf
 
   
   license:
@@ -27,7 +27,7 @@ project:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   
   toc:
-      - file: chapters/intro.md
+      - file: chapters/index.md
       - file: chapters/a-study-with-strings.md
       - title: Neuro Signal Quests
         children:
@@ -49,7 +49,7 @@ site:
     home_page_in_navbar: true
     use_edit_page_button: true
     use_repository_button: true
-    use_issues_button: true
+    # use_issues_button: true
     extra_navbar: "" # Will be displayed underneath the left navbar. This setting overrides the default 'powered by Jupyter Book'
     comments:
       hypothesis: true # Hypothesis for comments
