@@ -1,3 +1,8 @@
+---
+
+# thumbnail: ./thumbnails/nice-image.png
+---
+
 # Programming questboard
 *Exercises for becoming an awesome programmer*
 
