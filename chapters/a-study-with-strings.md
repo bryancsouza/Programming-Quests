@@ -26,6 +26,7 @@ $$s = 26*k + i$$
 with integers $k$ and $i$. And that different k values for a given n results in the same operation. For example, a shift of 2 ($k=0, n=2$) is equal to a shift of 28 ($k=1, n=2$).
 :::
 
+### Exercise 1
 For each chapter, implement a Python function that can undo the transformation and save a new txt file with the original text. Include in your solution functions to read and (re)write the files.
 
 :::{note}
@@ -48,6 +49,7 @@ For the second part of the book (the files containing chapters 8 to 14), the cha
 - Chapter 14: similar to Chapter 7, but with the first shift being different.
 
 
+### Exercise 1
 Similar to the previous exercise, implement a script that can undo the transformation of each chapter.
 
 
