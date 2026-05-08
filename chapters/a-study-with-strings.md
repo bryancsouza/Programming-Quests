@@ -17,15 +17,21 @@ The folder {download}`./A Study with Strings.zip` has multiple text files with t
 - Chapter 5: each letter of the alphabet ('abcdefghijklmnopqrstuvwxyz') was replaced by the following characters: 'qwertyuiopasdfghjklzxcvbnm', respectively. For example, 'a' -> 'q', 'b' -> 'w',  ..., 'z' -> 'm'.
 - Chapter 6: all characters were shifted by two letters in the alphabet ('a' -> 'c'), except the letters that were part of one of those digraph (two-letter grouping): 'th', 'er', 'on', 'an', 're', 'he', 'in', and 'ed'. For example, 'The Cat' -> 'The Ecv'. Note that it does not matter if the letters are lower or upper case (or a mix of the two) to be counted as one of the digraphs. 
 
-- Chapter 7: all the alphanumeric characters were shifted by a certain amount. The first character shifted, was shifted by 1, the second character shifted was shifted by 2, and so on, incrementing 1 to the shifted amount at every new shifted character. Spaces or other non alphanummeric characters do not add to the shift. Also, note that a shift $s$ that can always be written in the form: 
+- Chapter 7: all the alphanumeric characters were shifted by a certain amount. The first character shifted, was shifted by 1, the second character shifted was shifted by 2, and so on, incrementing 1 to the shifted amount at every new shifted character. Spaces or other non alphanummeric characters do not add to the shift. 
+
+:::{tip}
+Note that a shift $s$ that can always be written in the form: 
 $$s = 26*k + i$$
 with integers $k$ and $i$. And that different k values for a given n results in the same operation. For example, a shift of 2 ($k=0, n=2$) is equal to a shift of 28 ($k=1, n=2$).
+:::
 
 For each chapter, implement a Python function that can undo the transformation and save a new txt file with the original text. Include in your solution functions to read and (re)write the files.
 
 :::{note}
 You may note that the first chapters are easier - obviously to attract the mystery lovers into actually reading the book while programming their solutions. Of course, reading the actual book is not needed to solve the exercise, but if you like and have time, give it a try.. maybe you will find out some new passion, for programming or for mystery books. Who knows? 
 :::
+
+---
 
 ## Part 2
 _(Challenge!)_
@@ -45,6 +51,7 @@ Similar to the previous exercise, implement a script that can undo the transform
 
 
 :::{tip}
+:dropdown:
 The last two chapters are a bit harder to solve. And some of these problems would require a tool called [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis) to solve in an automatic way. Feel free to have a look at it if you are interested in Cryptography. However, it's also possible to break the code by deduction and some trial and error (look for common words in English that contain only 2 or 3 letters!). 
 :::
 
