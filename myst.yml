@@ -28,10 +28,13 @@ project:
   
   toc:
       - file: chapters/index.md
-      - file: chapters/a-study-with-strings.md
-      - title: Neuro Signal Quests
+      - file: chapters/questboard.md
+      - title: Quests
         children:
-          - file: chapters/neuro-signal-quest1.ipynb 
+          - file: chapters/a-study-with-strings.md
+          - title: Neuro Signal Quests
+            children:
+              - file: chapters/neuro-signal-quest1.ipynb 
 site:
   template: book-theme
   parts:
