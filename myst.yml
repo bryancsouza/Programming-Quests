@@ -3,15 +3,15 @@ version: 1
 
 project:
   id: b3daadf3-12be-4ed8-a44b-70fc4a39ab9b
-  title: Programming Questboard
+  title: Programming Quests
   
-  # plugins:
+  # plugins:7
   #   - plugins/pyodide-editable/pyodide-editable.mjs
-  # exports:
-  #     - format: pdf
-  #       template: arxiv_two_column
-  #       article: content/intro.md
-  #       output: exports/intro.pdf
+  exports:
+      - format: typst
+        template: lapreprint-typst
+        output: exports/book.pdf
+        id: output-pdf
 
   
   license:
@@ -23,18 +23,20 @@ project:
   authors: 
     - name: Bryan C. Souza
 
-  github: https://github.com/bryancsouza/Programming-Questboard
+  github: https://github.com/bryancsouza/Programming-Quests
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   
   toc:
       - file: content/index.md
+        title: Programming Quests
       - file: content/questboard.md
       - title: Quests
         children:
           - file: content/a-study-with-strings.md
-          - title: Neuro Signal Quests
+          - title: Neuro Signal
             children:
               - file: content/neuro-signal-quest1.ipynb 
+                title: Quest 1
 site:
   template: book-theme
   parts:
