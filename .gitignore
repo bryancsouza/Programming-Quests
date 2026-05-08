@@ -1,3 +1,5 @@
+chapters/A Study with Strings/original_files/
+_build/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
