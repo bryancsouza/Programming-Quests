@@ -6,9 +6,16 @@ project:
   title: Welcome to the Questboard
   # description:
   # keywords: []
+    
+  exports:
+      - format: pdf
+        template: arxiv_two_column
+        article: intro.md
+        output: exports/intro.pdf
+
   
   license:
-    code: GPLv3
+    code: GPL-3.0-or-later
     content: CC-BY-4.0
   jupyter:
     binder: 
