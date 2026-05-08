@@ -1,14 +1,12 @@
 
-# A study with strings
+# A Study with Strings
 
 This chapter will help you get proficient with str manipulations in Python. To solve the following exercises you need to have some basic understanding of:
 - if statements
 - for loops (and potentially some indexing on strings)
 - reading and writing from and to files
 
-## Exercise 1:
-
-### Part 1
+## Part 1
 
 The folder {download}`./A Study with Strings.zip` has multiple text files with the chapters of a mystery book ("A study in scarlet" by Arthur Conan Doyle). Each file have undergone a tranformation in which some characters of the text were changed. See below the list of all transformations:
 
@@ -29,7 +27,8 @@ For each chapter, implement a Python function that can undo the transformation a
 You may note that the first chapters are easier - obviously to attract the mystery lovers into actually reading the book while programming their solutions. Of course, reading the actual book is not needed to solve the exercise, but if you like and have time, give it a try.. maybe you will find out some new passion, for programming or for mystery books. Who knows? 
 :::
 
-### Part 2 (Challenge!):
+## Part 2
+_(Challenge!)_
 
 For the second part of the book (the files containing chapters 8 to 14), the chapters were modified using similar transformations described above in chapters 2, 3, 4, 5 and 7. However, in the previous part you new which operation was performed and with which parameters. For example, a shift to the next (a shift of 1) or previous (a shift of -1) character. Now, some of that information is missing.    
 

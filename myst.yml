@@ -1,0 +1,19 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b3daadf3-12be-4ed8-a44b-70fc4a39ab9b
+  title: Welcome to the Questboard
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/bryancsouza/Programming-Questboard
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+      - file: chapters/intro.md
+      - file: chapters/a-study-with-strings.md
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+
