@@ -7,45 +7,50 @@
     color: #000;
     cursor: pointer;
     border: 2px solid;
-    padding: 0.25em 0.5em;
     box-shadow:
     1px 1px 0px 0px,
     2px 2px 0px 0px,
     3px 3px 0px 0px;
-    position: relative;
-    float: right;
+    /* position: relative;
+    float: right; */
+    position: absolute;
+    right:    0;
+    bottom:   0;
     border-radius: 10px;
     padding: 10px 50px;
     }
 
 .question-button:active {
   box-shadow: 1px 1px 0px 0px;
-  top: 5px;
-  left: 5px;
+  right:    -2px;
+  bottom:   -2px;
 }
 
 .question-text{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 45px;
+    display:inline;
+    min-height: 145px;
+    
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: bold;
     color: #000;
-    position: relative;
-    padding: 30px 50px;
     
 }
 .question-special-text{
+    display:inline;
+    min-height: 145px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: bold;
-    color: #000;
+    color: #da0b0b;
 }
 
+.div{
+  min-height: 145px;
+  position: relative
+}
 mark.hotPink {
   background-color: HotPink;
 }

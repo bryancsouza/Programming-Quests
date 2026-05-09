@@ -21,23 +21,6 @@ function render({ model, el }) {
   const getJ = () => model.get('j');
   const setJ = (j) => model.set('j', j);
   
-
-//   var img = document.createElement('img')
-
-//   img.setAttribute("src", 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png');
-//   img.setAttribute("width", "304");
-//   img.setAttribute("height", "228");
-//   img.setAttribute("alt", "The Image");
-  
-  
-//   fetch('./PythonScroll.png')
-//     .then(response => response.blob()) 
-//     .then(blob => {
-//         let imgURL = URL.createObjectURL(blob);
-//         img.setAttribute("src", imgURL);
-//     })
-//     .catch(error => console.error("Error fetching image:", error));
-
     let colors = [
         "#26ccff",
         "#a25afd",
@@ -48,8 +31,20 @@ function render({ model, el }) {
         "#c829c8"
         ]
         
+  let t1 = document.createElement('span');
+  t1.classList.add('question-text');
+  let t2 = document.createElement('span');
+  t2.classList.add('question-special-text');
 
+  let t3 = document.createElement('span');
+  t3.classList.add('question-text');
 
+  let t4 = document.createElement('span');
+  t4.classList.add('question-special-text');
+
+  let t5 = document.createElement('span');
+  t5.classList.add('question-text');
+  
   let txt = document.createElement('div');
   txt.classList.add('question-text');
   
@@ -57,39 +52,68 @@ function render({ model, el }) {
   let btn = document.createElement('button');
   btn.classList.add('question-button');
 
-  setCount(randomIdx(getQuestion().length))
-  setI(randomIdx(getField1().length));
-  setJ(randomIdx(getField1().length));
+  
+  setCount(randomIdx(getQuestion()[0].length))
+  setI(randomIdx(getQuestion()[1][getCount()].length));
+  setJ(randomIdx(getQuestion()[3][getCount()].length));
   btn.innerHTML = `New question`
 
 
   // Handle button click
   btn.addEventListener('click', () => {
     
-    setCount(randomIdx(getQuestion().length))
-    setI(randomIdx(getField1().length));
-    setJ(randomIdx(getField1().length));
+    let i = randomIdx(getQuestion()[0].length)
+    setCount(i)
+    setI(randomIdx(getQuestion()[1][i].length));
+    setJ(randomIdx(getQuestion()[3][i].length));
     model.save_changes();
   });
 
   // Update text when count changes
   model.on('change:count', () => {
-  txt.textContent = `${getQuestion()[getCount()]} ${getField1()[randomIdx(getField1().length)]} to ${getField1()[getJ()]}`;
-  // txt.setHTMLUnsafe("`${getQuestion()[getCount()]} <span style="color:red">${getField1()[randomIdx(getField1().length)]}</span> to ${getField1()[getJ()]}`;")
-  Object.assign(txt.style, {
-    color: colors[randomIdx(colors.length)]
+  t1.textContent = `${getQuestion()[0][getCount()]}`
+  t2.textContent = `${getQuestion()[1][getCount()][getI()]}`
+  t3.textContent = `${getQuestion()[2][getCount()]}`
+  t4.textContent = `${getQuestion()[3][getCount()][getJ()]}`
+  t5.textContent = `${getQuestion()[4][getCount()]}`
+
+  Object.assign(t2.style, {
+    color: colors[getI()]
+    });
+  Object.assign(t4.style, {
+    color: colors[getJ()]
     });
   
   });
   
 //   el.appendChild(img);
-  el.appendChild(txt);
-  el.appendChild(btn);
+  // el.appendChild(txt);
+  let div1 = document.createElement('div')
+  div1.classList.add('div');
+  div1.appendChild(t1)
+  div1.appendChild(t2)
+  div1.appendChild(t3)
+  div1.appendChild(t4)
+  div1.appendChild(t5)
+  div1.appendChild(btn)
+  
+  el.appendChild(div1)
+
+  // el.appendChild(t1);
+  // el.appendChild(t2);
+  // el.appendChild(t3);
+  // el.appendChild(t4);
+  // el.appendChild(t5);
+  // el.appendChild(btn);
 
   // Destructor to clean-up when MyST is finished with us!
   return () => {
     btn.remove();
-    txt.remove();
+    t1.remove();
+    t2.remove();
+    t3.remove();
+    t4.remove();
+    t5.remove();
   }
 }
 export default { render };
