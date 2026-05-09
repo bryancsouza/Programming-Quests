@@ -29,7 +29,7 @@ project:
   toc:
       - file: content/index.md
         title: Programming Quests
-      - file: content/questboard.md
+      - file: content/board.md
       - title: Quests
         children:
           - file: content/a-study-with-strings.md
@@ -47,21 +47,15 @@ site:
     - title: Home
       url: https://bryancsouza.github.io/Programming-Questboard/
   options:
-    favicon: null #favicon.ico
-    logo: null #site_logo.png
+    favicon: ./.thumbnails/PythonScroll.png
+    logo: ./.thumbnails/PythonScroll.png
     hide_toc: false  
 
-    home_page_in_navbar: true
-    use_edit_page_button: true
-    use_repository_button: true
-    # use_issues_button: true
-    extra_navbar: "" # Will be displayed underneath the left navbar. This setting overrides the default 'powered by Jupyter Book'
-    comments:
-      hypothesis: true # Hypothesis for comments
   actions:
       - title: PDF
         url: ./exports/book.pdf
-  thumbnail: null
+  thumbnail: ./.thumbnails/PythonScroll.png
+    
 
 
 
