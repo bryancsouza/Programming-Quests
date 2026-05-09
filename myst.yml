@@ -40,8 +40,7 @@ project:
 site:
   template: book-theme
   parts:
-    toc_footer: content/primary-sidebar-footer.md
-    # toc_footer: Bryan C. Souza
+    primary_sidebar_footer: content/primary-sidebar-footer.md
 
   nav:
     - title: Home
@@ -50,7 +49,7 @@ site:
     favicon: ./.thumbnails/PythonScroll.png
     logo: ./.thumbnails/PythonScroll.png
     hide_toc: false  
-
+    style: ./style.css
   actions:
       - title: PDF
         url: ./exports/book.pdf

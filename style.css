@@ -1,0 +1,43 @@
+.text-gradient em {
+  background: -webkit-linear-gradient(0deg, #000000, #eee, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.tag{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid;
+    border-radius: 10px;
+    min-width: 10em;
+    padding: 1px 10px;    
+    hyphens: none;
+    white-space: nowrap;
+}
+.tag.str{
+    background-color: #412def;    
+}
+.tag.loops{
+    background-color: #ef2da5;
+}
+.tag.plots{
+    background-color: #97bce7;
+}
+
+.tag.ifs{
+    background-color: #096e35;
+}
+.tag.neuro{
+    background-color: #2dcfef;
+}
+.tag.cryptography{
+    background-color: #9e4705;
+}
+.tag.array{
+    background-color: #6c3b04;
+}
