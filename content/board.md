@@ -8,7 +8,7 @@ site:
 :class: col-page-right
 
 :::{grid-item-card} 
-:header: **Random Exercise**
+:header: **Random Exercise Generator**
 <!-- <span class="text-gradient" style="font-weight:bold;"><em>Write a program that  ..</em></span> -->
 
 ```{anywidget} random-question.mjs
@@ -44,7 +44,7 @@ site:
 <span class="tag ifs">if statements</span>
 :::
 
-:::{card}
+:::{grid-item-card} 
 :link: ./neuro-signal-quest1 
 :header: <span style = "color : #3803e4; font-weight:bold;">Neuro Signal Quest 1</span>
 
@@ -61,4 +61,5 @@ site:
 <span class="tag list">lists</span>
 <span class="tag str">str</span>
 :::
+
 
