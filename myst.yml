@@ -33,12 +33,23 @@ project:
       - title: Quests
         children:
           - file: content/a-study-with-strings.md
-          - title: Neuro Signal
+          - title: Neuro Signal Processing
             children:
-              - file: content/neuro-signal-quest1.ipynb 
-                title: Quest 1
+              - file: content/01-neuro-signal.ipynb 
+                title: Filtering and data manipulation
+          - title: Cryptography
+            children:
+              - file: content/01-cryptography.ipynb
+              - file: content/02-cryptography-landing.md
+              - file: content/02-cryptography.ipynb
+                hidden: true
+
+              - file: content/03-cryptography-landing.md
+              - file: content/03-cryptography.ipynb
+                hidden: true
 site:
   template: book-theme
+  robots: disallow
   parts:
     primary_sidebar_footer: content/primary-sidebar-footer.md
 
