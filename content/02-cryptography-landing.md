@@ -8,8 +8,7 @@ numbering:
 ---
 
 
-To unlock the second part of the chapter, you first need to solve the [first part](./01-cryptography). After decoding last section's text, add the last 10 characters to the url in the following link:
+To unlock the second part of the chapter, you first need to solve the [first part](./01-cryptography). After decoding last section's text, add the last word of the text to the url in the following link:
 
-[Cryptography - Part 2](./02-cryptography-landing)
-[Cryptography - Part 2](./02-cryptography)
+[Cryptography - Part 2](./02-cryptography-)
 
