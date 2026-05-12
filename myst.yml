@@ -47,6 +47,12 @@ project:
               - file: content/03-cryptography-landing.md
               - file: content/03-cryptography.ipynb
                 hidden: true
+
+              - file: content/cryptography-credits-landing.md
+              - file: content/cryptography-credits-aacoltfp.md
+                hidden: true
+              - file: content/cryptography-leaderboard.ipynb
+                
 site:
   template: book-theme
   robots: disallow
