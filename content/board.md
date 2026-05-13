@@ -45,7 +45,7 @@ site:
 :::
 
 :::{grid-item-card} 
-:link: ./neuro-signal-quest1 
+:link: ./neuro-signal-01 
 :header: <span style = "color : #3803e4; font-weight:bold;">Neuro Signal Quest 1</span>
 
 <span class="tag array">arrays</span>
@@ -56,7 +56,7 @@ site:
 
 :::{grid-item-card} 
 :header: <span style = "color : #d4aa02; font-weight:bold;">Cryptography</span>
-:link: ./cryptography
+:link: ./cryptography-01
 <span class="tag array">arrays</span>
 <span class="tag list">lists</span>
 <span class="tag str">str</span>

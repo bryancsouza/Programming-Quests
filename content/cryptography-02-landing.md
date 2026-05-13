@@ -1,7 +1,7 @@
 ---
 title: Vigenere's and Caesar's ciphers
 short_title: Vigenere and Caesar
-url: cryptography2
+
 
 numbering:
   headings: true

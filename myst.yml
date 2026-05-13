@@ -39,13 +39,13 @@ project:
                 title: Filtering and data manipulation
           - title: Cryptography
             children:
-              - file: content/01-cryptography.ipynb
-              - file: content/02-cryptography-landing.md
-              - file: content/02-cryptography.ipynb
+              - file: content/cryptography-01.ipynb
+              - file: content/cryptography-02-landing.md
+              - file: content/cryptography-02.ipynb
                 hidden: true
 
-              - file: content/03-cryptography-landing.md
-              - file: content/03-cryptography.ipynb
+              - file: content/cryptography-03-landing.md
+              - file: content/cryptography-03.ipynb
                 hidden: true
 
               - file: content/cryptography-credits-landing.md
