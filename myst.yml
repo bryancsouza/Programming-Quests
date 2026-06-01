@@ -18,8 +18,9 @@ project:
     code: GPL-3.0-or-later
     content: CC-BY-4.0
   jupyter:
-    binder: 
-      repo: https://github.com/executablebooks/thebe-binder-base 
+    lite: true
+    # binder: 
+    #   repo: https://github.com/executablebooks/thebe-binder-base 
   authors: 
     - name: Bryan C. Souza
 
@@ -30,32 +31,31 @@ project:
       - file: content/index.md
         title: Programming Quests
       - file: content/board.md
-      - title: Quests
+        title: Quests
         children:
           - file: content/a-study-with-strings.md
           - title: Neuro Signal Processing
             children:
-              - file: content/01-neuro-signal.ipynb 
+              - file: content/neuro-signal-01.ipynb 
                 title: Filtering and data manipulation
           - title: Cryptography
             children:
               - file: content/cryptography-01.ipynb
               - file: content/cryptography-02-landing.md
-              - file: content/cryptography-02.ipynb
+              - file: content/cryptography-02-sutayta.ipynb
                 hidden: true
 
               - file: content/cryptography-03-landing.md
-              - file: content/cryptography-03.ipynb
+              - file: content/cryptography-03-genevieve.ipynb
                 hidden: true
 
-              - file: content/cryptography-credits-landing.md
+              # - file: content/cryptography-credits-landing.md
               - file: content/cryptography-credits-aacoltfp.md
                 hidden: true
               - file: content/cryptography-leaderboard.ipynb
                 
 site:
   template: book-theme
-  robots: disallow
   parts:
     primary_sidebar_footer: content/primary-sidebar-footer.md
 
@@ -67,6 +67,8 @@ site:
     logo: ./.thumbnails/PythonScroll.png
     hide_toc: false  
     style: ./style.css
+    robots: disallow
+  
   actions:
       - title: PDF
         url: ./exports/book.pdf
