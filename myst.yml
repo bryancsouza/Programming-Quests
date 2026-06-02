@@ -18,9 +18,9 @@ project:
     code: GPL-3.0-or-later
     content: CC-BY-4.0
   jupyter:
-    lite: true
-    # binder: 
-    #   repo: https://github.com/executablebooks/thebe-binder-base 
+    # lite: true
+    binder: 
+      repo: https://github.com/executablebooks/thebe-binder-base 
   contributors:
     - id: Bryan Souza
       name: Bryan C. Souza
