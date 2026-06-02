@@ -3,6 +3,8 @@
 
 name: Jupyter Book (via myst) GitHub Pages Deploy
 on:
+  schedule:
+     - cron: "41 17 * * 1"
   push:
     # Runs on pushes targeting the default branch
     branches: [main]
