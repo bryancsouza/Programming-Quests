@@ -4,7 +4,7 @@ version: 1
 project:
   id: b3daadf3-12be-4ed8-a44b-70fc4a39ab9b
   title: Programming Quests
-  
+  jupyter: true
   # plugins:7
   #   - plugins/pyodide-editable/pyodide-editable.mjs
   exports:
