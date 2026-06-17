@@ -53,7 +53,6 @@ jobs:
           compression-level: 0
       - name: Build HTML Assets
         run: 
-          jupyter kernelspec list
           mkdir -p .jupyter
           touch ./.jupyter/jupyter_server_config.py
           jupyter-book build --execute --html
