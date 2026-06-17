@@ -42,15 +42,26 @@ jobs:
       - name: Install Jupyter Book (via myst)
         run: npm install -g jupyter-book
 
-      - uses: typst-community/setup-typst@v5
-      - name: Build PDF
-        run: jupyter-book build --pdf
-      - name: Upload Output PDF as Artifact
-        uses: actions/upload-artifact@v4
+      #- uses: typst-community/setup-typst@v5
+      #- name: Build PDF
+      #  run: jupyter-book build --pdf
+      #- name: Upload Output PDF as Artifact
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: Output PDF
+      #    path: exports/book.pdf
+      #    compression-level: 0
+      
+      # Install dependencies
+      - uses: conda-incubator/setup-miniconda@v3
         with:
-          name: Output PDF
-          path: exports/book.pdf
-          compression-level: 0
+          python-version: '3.12'
+          mamba-version: "*"
+          channels: conda-forge,defaults
+          channel-priority: true
+          activate-environment: programming-quest
+          environment-file: environment.yml
+
       - name: Build HTML Assets
         run: |
           echo $JUPYTER_CONFIG_DIR
