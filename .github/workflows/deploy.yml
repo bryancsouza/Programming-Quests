@@ -53,6 +53,7 @@ jobs:
           compression-level: 0
       - name: Build HTML Assets
         run: |
+          echo $JUPYTER_CONFIG_DIR
           mkdir -p /home/runner/work/Programming-Quests/Programming-Quests/.jupyter
           touch /home/runner/work/Programming-Quests/Programming-Quests/.jupyter/jupyter_server_config.py
           printf "c.ServerApp.allow_root = True\n" > /home/runner/work/Programming-Quests/Programming-Quests/.jupyter/jupyter_server_config.py
