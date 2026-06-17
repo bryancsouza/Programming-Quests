@@ -51,9 +51,13 @@ jobs:
           name: Output PDF
           path: exports/book.pdf
           compression-level: 0
-
       - name: Build HTML Assets
-        run: jupyter-book build --execute --html 
+        run: 
+          jupyter kernelspec list
+          mkdir -p .jupyter
+          printf "c.ServerApp.allow_root = True\n" > .jupyter/jupyter_server_config.py
+          export JUPYTER_CONFIG_DIR="$PWD/.jupyter"
+          jupyter-book build --execute --html --debug
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
