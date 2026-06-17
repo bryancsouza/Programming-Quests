@@ -55,7 +55,7 @@ jobs:
         run: |
           mkdir -p .jupyter
           touch .jupyter/jupyter_server_config.py
-          cat "c.ServerApp.allow_root = True\n" > .jupyter/jupyter_server_config.py
+          printf "c.ServerApp.allow_root = True\n" > .jupyter/jupyter_server_config.py
           export JUPYTER_CONFIG_DIR="$PWD/.jupyter"
           jupyter-book build --execute --html
       - name: Upload artifact
