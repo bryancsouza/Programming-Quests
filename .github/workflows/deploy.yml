@@ -53,10 +53,10 @@ jobs:
           compression-level: 0
       - name: Build HTML Assets
         run: |
-          mkdir -p .jupyter
-          touch .jupyter/jupyter_server_config.py
-          printf "c.ServerApp.allow_root = True\n" > .jupyter/jupyter_server_config.py
-          export JUPYTER_CONFIG_DIR="$PWD/.jupyter"
+          mkdir -p /home/runner/work/Programming-Quests/Programming-Quests/.jupyter
+          touch /home/runner/work/Programming-Quests/Programming-Quests/.jupyter/jupyter_server_config.py
+          printf "c.ServerApp.allow_root = True\n" > /home/runner/work/Programming-Quests/Programming-Quests/.jupyter/jupyter_server_config.py
+          export JUPYTER_CONFIG_DIR="/home/runner/work/Programming-Quests/Programming-Quests/.jupyter"
           jupyter-book build --execute --html --debug
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
