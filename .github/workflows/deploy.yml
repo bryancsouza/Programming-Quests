@@ -52,7 +52,7 @@ jobs:
           path: exports/book.pdf
           compression-level: 0
       - name: Build HTML Assets
-        run: 
+        run: |
           mkdir -p .jupyter
           touch ./.jupyter/jupyter_server_config.py
           jupyter-book build --execute --html
