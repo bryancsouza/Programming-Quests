@@ -55,7 +55,7 @@ jobs:
         run: 
           jupyter kernelspec list
           mkdir -p .jupyter
-          printf "c.ServerApp.allow_root = True\n" > .jupyter/jupyter_server_config.py
+          cat "c.ServerApp.allow_root = True\n" >  .jupyter/jupyter_server_config.py
           jupyter-book build --execute --html --debug
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
